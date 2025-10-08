@@ -1,0 +1,87 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+div {
+    outline: 1px solid black;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.side-bar {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    background-color: #2596be;
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr 3fr 5fr;
+}
+
+.side-bar > div > ul {
+    list-style-type: none;
+}
+
+.side-bar ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+.searchbar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.masthead-end {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.intro {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.buttons {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.main {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: #E2E8F0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.projects {
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.right-bar {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
