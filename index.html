@@ -8,126 +8,195 @@
 </head>
 <body>
     <div class="side-bar">
-        <div class="logo">Dashboard</div>
+        <div class="logo">
+            <img id="dashboard-logo" src="./icons/view-dashboard.svg" alt="">
+            Dashboard
+        </div>
         <div class="menu-one">
             <ul>
-                <li><a href="#"><img src="" alt="">Home</a></li>
-                <li><a href="#"><img src="" alt="">Profile</a></li>
-                <li><a href="#"><img src="" alt="">Messages</a></li>
-                <li><a href="#"><img src="" alt="">History</a></li>
-                <li><a href="#"><img src="" alt="">Tasks</a></li>
-                <li><a href="#"><img src="" alt="">Communities</a></li>
+                <li><a href="#">
+                    <img class="icon-color" src="./icons/home.svg" alt="">
+                    Home
+                </a></li>
+                <li><a href="#">
+                    <img class="icon-color" src="./icons/card-account-details-outline.svg" alt="">
+                    Profile
+                </a></li>
+                <li><a href="#">
+                    <img class="icon-color" src="./icons/message.svg" alt="">
+                    Messages
+                </a></li>
+                <li><a href="#">
+                    <img class="icon-color" src="./icons/clock-time-eight.svg" alt="">
+                    History
+                </a></li>
+                <li><a href="#">
+                    <img class="icon-color" src="./icons/note-multiple.svg" alt="">
+                    Tasks
+                </a></li>
+                <li><a href="#">
+                    <img class="icon-color" src="./icons/account-group.svg" alt="">
+                    Communities
+                </a></li>
             </ul>
         </div>
         <div class="menu-two">
             <ul>
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Privacy</a></li>
+                <li><a href="#">
+                    <img class="icon-color" src="./icons/cog.svg" alt="">
+                    Settings
+                </a></li>
+                <li><a href="#">
+                    <img class="icon-color" src="./icons/help-box.svg" alt="">
+                    Support
+                </a></li>
+                <li><a href="#">
+                    <img class="icon-color" src="./icons/shield-check.svg" alt="">
+                    Privacy
+                </a></li>
             </ul>
         </div>
     </div>
-    <div class="header"> <!-- Splitting into rows -->
-        <div class="searchbar">
-            <img src="" alt="search-icon">
-            <input type="search">
+    <div class="header">
+        <div class="searcharea">
+            <a href="#">
+                <img class="icon-color-dark" src="./icons/magnify.svg" alt="">
+            </a>
+            <input id="searchbar" type="search">
         </div>
         <div class="masthead-end">
-            <a href="">
-                <img src="" alt="bell">
+            <a href="#">
+                <img class="icon-color-dark" src="./icons/bell-ring-outline.svg" alt="">
             </a>
             <a href="#">
-                <img src="" alt="user icon">
+                <img class="user-icon-small" src="./icons/cat-with-yarn.png" alt="">
             </a>
-            <p>Morgan Oakley</p>
+            <h3>Morgan Oakley</h3>
         </div>
         <div class="intro">
             <a href="#">
-                <img src="" alt="user icon">
+                <img class="user-icon" src="./icons/cat-with-yarn.png" alt="">
             </a>
             <div>
                 <p>Hi there,</p>
-                <p>Morgan Oakley (@morgan)</p>
+                <h2>Morgan Oakley (@morgan)</h2>
             </div>
         </div>
         <div class="buttons">    
-            <button>New</button>
-            <button>Upload</button>
-            <button>Share</button>
+            <button class="masthead-buttons">New</button>
+            <button class="masthead-buttons">Upload</button>
+            <button class="masthead-buttons">Share</button>
         </div>
     </div>
     <div class="main">
         <div class="projects">
-            <div class="card">
-                <p class="title">Super Cool Project</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veritatis porro culpa, consequuntur illo commodi?</p>
-            </div>
-            <div class="card">
-                <p class="title">Super Cool Project</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor tempore unde alias ullam ducimus quaerat.</p>
-            </div>
-            <div class="card">
-                <p class="title">Super Cool Project</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam repellat porro fugit sequi iusto!</p>
-            </div>
-            <div class="card">
-                <p class="title">Super Cool Project</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit modi ipsa dolorem magni nam sequi.</p>
-            </div>
-            <div class="card">
-                <p class="title">Super Cool Project</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et architecto dicta possimus aspernatur rerum consectetur?</p>
-            </div>
-            <div class="card">
-                <p class="title">Super Cool Project</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum ea veritatis nemo itaque tempora nesciunt?</p>
+            <h2>Your Projects</h2>
+            <div class="projects-inner">
+                <div class="card">
+                    <p class="title">Super Cool Project</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veritatis porro culpa, consequuntur illo commodi?</p>
+                    <div>
+                        <img class="icon-color-dark" src="./icons/star-plus-outline.svg" alt="">
+                        <img class="icon-color-dark" src="./icons/eye-plus-outline.svg" alt="">
+                        <img class="icon-color-dark" src="./icons/share-variant-outline.svg" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="title">Super Cool Project</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor tempore unde alias ullam ducimus quaerat.</p>
+                    <div>
+                        <img class="icon-color-dark" src="./icons/star-plus-outline.svg" alt="">
+                        <img class="icon-color-dark" src="./icons/eye-plus-outline.svg" alt="">
+                        <img class="icon-color-dark" src="./icons/share-variant-outline.svg" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="title">Super Cool Project</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam repellat porro fugit sequi iusto!</p>
+                    <div>
+                        <img class="icon-color-dark" src="./icons/star-plus-outline.svg" alt="">
+                        <img class="icon-color-dark" src="./icons/eye-plus-outline.svg" alt="">
+                        <img class="icon-color-dark" src="./icons/share-variant-outline.svg" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="title">Super Cool Project</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit modi ipsa dolorem magni nam sequi.</p>
+                    <div>
+                        <img class="icon-color-dark" src="./icons/star-plus-outline.svg" alt="">
+                        <img class="icon-color-dark" src="./icons/eye-plus-outline.svg" alt="">
+                        <img class="icon-color-dark" src="./icons/share-variant-outline.svg" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="title">Super Cool Project</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et architecto dicta possimus aspernatur rerum consectetur?</p>
+                    <div>
+                        <img class="icon-color-dark" src="./icons/star-plus-outline.svg" alt="">
+                        <img class="icon-color-dark" src="./icons/eye-plus-outline.svg" alt="">
+                        <img class="icon-color-dark" src="./icons/share-variant-outline.svg" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="title">Super Cool Project</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum ea veritatis nemo itaque tempora nesciunt?</p>
+                    <div>
+                        <img class="icon-color-dark" src="./icons/star-plus-outline.svg" alt="">
+                        <img class="icon-color-dark" src="./icons/eye-plus-outline.svg" alt="">
+                        <img class="icon-color-dark" src="./icons/share-variant-outline.svg" alt="">
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="right-bar">
-            <div class="announcements">
-                <p>Site Maintenance</p>
+        <div class="announcements">
+            <h2>Announcements</h2>
+            <div class="announcements-inner">
+                <h4>Site Maintenance</h4>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam laudantium rerum mollitia ratione?...</p>
                 <hr>
-                <p>Community Share Day</p>
+                <h4>Community Share Day</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius facilis nemo commodi asperiores!...</p>
                 <hr>
-                <p>Updated Privacy Policy</p>
+                <h4>Updated Privacy Policy</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia eum fuga magnam....</p>
             </div>
-            <div class="trending">
+        </div>
+        <div class="trending">
+            <h2>Trending</h2>
+            <div class="trending-inner">
                 <div>
                     <a href="#">
-                        <img src="" alt="">
+                        <img class="user-icon-small" src="./icons/cheetah.png" alt="tegan's icon">
                     </a>
                     <div>
-                        <p>@tegan</p>
+                        <p style="font-weight: bold;">@tegan</p>
                         <p>World Peace Builder</p>
                     </div>
                 </div>
                 <div>
                     <a href="#">
-                        <img src="" alt="">
+                        <img class="user-icon-small" src="./icons/cat-with-yarn.png" alt="morgan's icon">
                     </a>
                     <div>
-                        <p>@morgan</p>
+                        <p style="font-weight: bold;">@morgan</p>
                         <p>Super Cool Project</p>
                     </div>
                 </div>
                 <div>
                     <a href="#">
-                        <img src="" alt="">
+                        <img class="user-icon-small" src="./icons/spiderman.png" alt="kendall's icon">
                     </a>
                     <div>
-                        <p>@kendall</p>
+                        <p style="font-weight: bold;">@kendall</p>
                         <p>Life Changing App</p>
                     </div>
                 </div>
                 <div>
                     <a href="#">
-                        <img src="" alt="">
+                        <img class="user-icon-small" src="./icons/penguin.png" alt="alex's icon">
                     </a>
                     <div>
-                        <p>@alex</p>
+                        <p style="font-weight: bold;">@alex</p>
                         <p>No Traffic Maker</p>
                     </div>
                 </div>
