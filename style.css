@@ -12,11 +12,6 @@ body {
     grid-template-rows: 1fr 5fr;
 }
 
-/* TEMPORARY */
-div {
-    /* outline: 1px solid black; */
-}
-
 /* 1ST SECTION */
 
 .side-bar {
